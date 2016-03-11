@@ -17,10 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from home import views as home_views
 from water import views as water_views
+from skinning import views as skinning_views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home/', home_views.index),
     url(r'^water/', water_views.index),
+    url(r'^skinning/', skinning_views.index),
 ]
