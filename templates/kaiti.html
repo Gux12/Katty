@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>毕业设计开题</title>
+    <meta name="顾乡" content="毕设开题" />
+    <link href="../static/css/impress-demo.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+	<div class="fallback-message">
+	    <p>你的浏览器 <b>不支持</b> impress.js要求的配置所以只会以普通页面的方式展现</p>
+	    <p>如果需要得到最佳的用户体验请使用最新版的<b>Chrome</b>, <b>Safari</b> 或 <b>Firefox</b> 浏览器</p>
+	</div>
+	<div id="impress">
+		<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+	        <q>你是否已经厌倦 <b>bored</b> 一页一页的PPT</q>
+	    </div>
+
+	    <div class="step slide" data-x="0" data-y="-1500">
+	        <x3d width='780px' height='620px'>
+                <scene>
+                    <shape>
+			         	<appearance>
+			          		<material diffuseColor='1 1 0'></material>
+			        	</appearance>
+			        	<box></box>
+			      	</shape>
+			    </scene>
+			  </x3d>
+	    </div>
+
+	    <div class="step slide" data-x="1000" data-y="-1500">
+            <h1>WebGL也可以做出类似的效果哦<h1>
+	    	<iframe src="../static/getwebglorg/index.html" width="780px" height="620px"></iframe>
+	    </div>
+
+	    <div class="step" data-x="1000" data-y="-500">
+	    	<iframe src="http://127.0.0.1:8000/water" width="900px" height="700px"></iframe>
+	    </div>
+	</div>
+<script src="../static/js/x3dom.js"></script>
+<script src="../static/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
