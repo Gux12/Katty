@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>毕业设计开题</title>
     <meta name="顾乡" content="毕设开题" />
-    <link href="../static/css/impress-demo.css" rel="stylesheet" />
+    <link href="../static/css/impress.css" rel="stylesheet" />
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/css/bootstrap-theme.min.css" rel="stylesheet" />
     <script src="../static/js/x3dom.js"></script>
+    <script src="../static/js/jquery-1.12.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
 </head>
 <body class="impress-not-supported">
 	<div class="fallback-message">
@@ -15,45 +23,222 @@
 	    <p>如果需要得到最佳的用户体验请使用最新版的<b>Chrome</b>, <b>Safari</b> 或 <b>Firefox</b> 浏览器</p>
 	</div>
 	<div id="impress">
-		<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-	        <q>你是否已经厌倦 <b>bored</b> 一页一页的PPT</q>
+
+
+		<div id="title" class="step" data-x="-5000" data-y="0" data-scale="6">
+            <h1 style="text-align: center">新一代电子商务平台<br/>虚拟现实交互系统开发</h1><br/>
+            <h2 style="text-align: center">本科生:顾乡</h2>
+            <h2 style="text-align: center">指导老师:柴跃廷</h2>
+            <h2 style="text-align: center">时间:3月15日</h2>
 	    </div>
 
-	    <div class="step slide" data-x="0" data-y="-1500">
-	        <x3d width='780px' height='620px'>
-                <scene>
-                    <shape>
-			         	<appearance>
-			          		<material diffuseColor='1 1 0'></material>
-			        	</appearance>
-			        	<box></box>
-			      	</shape>
-			    </scene>
-			  </x3d>
-	    </div>
 
-	    <div class="step slide" data-x="1000" data-y="-1500">
-            <h1>WebGL也可以做出类似的效果哦</h1>
-	    	<iframe src="../static/getwebglorg/index.html" width="780px" height="620px"></iframe>
-	    </div>
 
-	    <div class="step slide" data-x="1000" data-y="-500">
-	    	<iframe src="../water" width="900px" height="700px"></iframe>
-	    </div>
-
-        <div class="step slide" data-x="1000" data-y="500">
-	    	<iframe src="../skinning" width="900px" height="700px"></iframe>
-	    </div>
-        <div class="step slide" data-x="2000" data-y="500">
-            <x3d width='900px' height='700px'>
-                <scene>
-                        <viewpoint position="-1.94639 1.79771 -2.89271" orientation="0.03886 0.99185 0.12133 3.75685"></viewpoint>
-                        <Inline nameSpaceName="Deer" mapDEFToID="true" onclick='redNose();' url="/static/Deer.x3d" />
-                </scene>
-            </x3d>
+{#这里是研究意义和选题背景#}
+        <div id="meaning" class="step" data-x="2000" data-y="-700" data-scale="4">
+            <h1 style="text-align: center">选题背景及研究意义</h1>
+        </div>
+        <div class="step slide" data-x="1000" data-y="-4000">
+            <div class="modal-header">
+                选题背景及研究意义——中国电子商务发展史
+            </div>
+            <div class="modal-body">
+                <blockquote>
+                     <p>（十四）<strong>创新工业生产组织方式</strong>。支持生产制造企业深化<strong>物联网、云计算、大数据、三维（3D）设计及打印</strong>等信息技术在生产制造各环节的应用，<strong>建立与客户电子商务系统对接的网络制造管理系统，提高加工订单的响应速度及柔性制造能力</strong>；面向网络消费者个性化需求，建立网络化经营管理模式，<strong>发展“以销定产”及“个性化定制”生产方式</strong>。（工业和信息化部、科技部、商务部）鼓励电子商务企业大力开展品牌经营，优化配置研发、设计、生产、物流等优势资源，满足网络消费者需求。（商务部、工商总局、质检总局）鼓励创意服务，探索建立生产性创新服务平台，面向初创企业及创意群体提供设计、测试、生产、融资、运营等创新创业服务。（工业和信息化部、科技部）——<a href="http://www.gov.cn/gongbao/content/2015/content_2864052.htm" target="_blank">《国务院关于大力发展电子商务加快培育经济新动力的意见》</a></p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="step slide" data-x="2000" data-y="-4000">
+            <div class="modal-header">
+                选题背景及研究意义——中国电子商务发展史
+            </div>
+            <div class="modal-body">
+                <img src="../static/img/1.png" class="img-responsive">
+            </div>
         </div>
 
-	</div>
+
+
+
+
+
+
+
+        <div id="now" class="step" data-x="2000" data-y="-350" data-scale="4">
+            <h1 style="text-align: center">现状调研</h1>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="aim" class="step" data-x="2000" data-y="0" data-scale="4">
+            <h1 style="text-align: center">毕业设计目标</h1>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div id="plan" class="step" data-x="2000" data-y="350" data-scale="4">
+            <h1 style="text-align: center">进度安排</h1>
+        </div>
+        <div class="step slide" data-x="5000" data-y="5000" data-rotate-z="-45">
+            <div class="modal-header">
+                进度安排
+            </div>
+            <div class="modal-body container-fluid">
+                <table class="table table-striped " style="font-size: 26px;margin-top: 50px">
+                    <thead>
+                        <tr>
+                            <th style="width: 150px">时间</th>
+                            <th>进度</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>4周~5周</td>
+                        <td>构建虚拟现实场景，初步搭建电子商务平台，明确数据库结构。</td>
+                    </tr>
+                    <tr>
+                        <td>6周~9周</td>
+                        <td>利用Web3D实现虚拟现实场景的浏览器呈现，明确交互方式与具体实现。并协同完善新电子商务平台前端展现。</td>
+                    </tr>
+                    <tr>
+                        <td>10周~13周</td>
+                        <td>完成虚拟现实的数据驱动，以及功能完善</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="step slide" data-x="6000" data-y="4000" data-rotate-z="-45">
+            <div class="modal-header">
+                已完成进度
+            </div>
+            <div class="modal-body container-fluid">
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="reference" class="step" data-x="2000" data-y="700" data-scale="4">
+            <h1 style="text-align: center">参考文献</h1>
+        </div>
+        <div class="step slide" data-x="2000" data-y="4000">
+            <div class="modal-header">
+                参考文献
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        {#        <div class="step slide" data-x="1000" data-y="-2500" data-scale="1">#}
+{#            <div class="modal-header">#}
+{#                选题背景及研究意义#}
+{#            </div>#}
+{#            <div class="modal-body">#}
+{#                <ul>#}
+{#                    <li>123</li>#}
+{#                    <li>123</li>#}
+{#                    <li>#}
+{#                        <ul>#}
+{#                            <li>123</li>#}
+{#                            <li>123</li>#}
+{#                            <li>123</li>#}
+{#                        </ul>#}
+{#                    </li>#}
+{#                </ul>#}
+{#                <p>#}
+{#            </div>#}
+{#        </div>#}
+{#	    <div class="step slide" data-x="0" data-y="-1500" data-scale="1">#}
+{#	        <x3d width='780px' height='620px'>#}
+{#                <scene>#}
+{#                    <shape>#}
+{#                        <appearance>#}
+{#                        <material diffuseColor='1 0 0'></material>#}
+{#                        </appearance>#}
+{#                        <box></box>#}
+{#                    </shape>#}
+{#                    <transform translation='-3 0 0'>#}
+{#                    <shape>#}
+{#                        <appearance>#}
+{#                        <material diffuseColor='0 1 0'></material>#}
+{#                        </appearance>#}
+{#                        <cone></cone>#}
+{#                    </shape>#}
+{#                    </transform>#}
+{#                    <transform translation='3 0 0'>#}
+{#                    <shape>#}
+{#                        <appearance>#}
+{#                        <material diffuseColor='0 0 1'></material>#}
+{#                        </appearance>#}
+{#                        <sphere></sphere>#}
+{#                    </shape>#}
+{#                    </transform>#}
+{#			    </scene>#}
+{#			  </x3d>#}
+{#	    </div>#}
+{##}
+{##}
+{#	    <div class="step slide" data-x="1000" data-y="-1500">#}
+{#            <h1>WebGL也可以做出类似的效果哦</h1>#}
+{#	    	<iframe src="../static/getwebglorg/index.html" width="780px" height="620px"></iframe>#}
+{#	    </div>#}
+{##}
+{#	    <div class="step slide" data-x="1000" data-y="-500">#}
+{#	    	<iframe src="../water" width="900px" height="700px"></iframe>#}
+{#	    </div>#}
+{##}
+{#        <div class="step slide" data-x="1000" data-y="500">#}
+{#	    	<iframe src="../skinning" width="900px" height="700px"></iframe>#}
+{#	    </div>#}
+{#        <div class="step slide" data-x="2000" data-y="500">#}
+{#            <x3d width='900px' height='700px'>#}
+{#                <scene>#}
+{#                        <viewpoint position="-1.94639 1.79771 -2.89271" orientation="0.03886 0.99185 0.12133 3.75685"></viewpoint>#}
+{#                        <Inline nameSpaceName="Deer" mapDEFToID="true" onclick='redNose();' url="/static/Deer.x3d" />#}
+{#                </scene>#}
+{#            </x3d>#}
+{#        </div>#}
     <script>
     function redNose()
     {

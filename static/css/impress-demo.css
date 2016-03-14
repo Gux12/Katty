@@ -45,7 +45,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -231,7 +230,6 @@ a:focus {
     display: block;
     font-size: 50px;
     line-height: 72px;
-
     margin-top: 100px;
 }
 
@@ -268,18 +266,18 @@ a:focus {
 }
 
 #title h1 {
-    font-size: 190px;
+    font-size: 64px;
 
-    -webkit-transform: translateZ(50px);
-    -moz-transform:    translateZ(50px);
-    -ms-transform:     translateZ(50px);
-    -o-transform:      translateZ(50px);
-    transform:         translateZ(50px);
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
 }
 
-#title .footnote {
-    font-size: 32px;
-}
+/*#title .footnote {*/
+    /*font-size: 32px;*/
+/*}*/
 
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
