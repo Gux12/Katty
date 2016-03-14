@@ -29,17 +29,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-b, u, i, center, blockquote,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, caption,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     border: 0;
@@ -47,10 +37,7 @@ time, mark, audio, video {
     vertical-align: baseline;
     line-height: 1.5;
 }
-p {
-    font-size: 26px;
-    line-height: 1.5;
-}
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -223,6 +210,11 @@ a:focus {
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -1px;
+    
+    background-image: url("/static/img/2.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 95% 1%;
 }
 
 .slide q {
@@ -289,6 +281,58 @@ a:focus {
 }
 #reference h1{
     font-size: 64px;
+}
+
+
+#bg b {
+    display: inline-block;
+    -webkit-transition: 1s;
+    -moz-transition:    1s;
+    -ms-transition:     1s;
+    -o-transition:      1s;
+    transition:         1s;
+}
+
+#bg.present .bg1 {
+    -webkit-transform: translateY(-5px);
+    -moz-transform:    translateY(-5px);
+    -ms-transform:     translateY(-5px);
+    -o-transform:      translateY(-5px);
+    transform:         translateY(-5px);
+}
+
+/*
+    ... 'rotating' to rotate a quarter of a second later ...
+*/
+#bg.present .bg2 {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-5px);
+
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay:    1s;
+    -ms-transition-delay:     1s;
+    -o-transition-delay:      1s;
+    transition-delay:         1s;
+}
+
+/*
+    ... and 'scaling' to scale down after another quarter of a second.
+*/
+#bg.present .bg3 {
+    -webkit-transform: translateY(-10px);
+    -moz-transform:    translateY(-10px);
+    -ms-transform:     translateY(-10px);
+    -o-transform:      translateY(-10px);
+    transform:         translateY(-5px);
+
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay:    2s;
+    -ms-transition-delay:     2s;
+    -o-transition-delay:      2s;
+    transition-delay:         2s;
 }
 /*
     The last step is an overview.
